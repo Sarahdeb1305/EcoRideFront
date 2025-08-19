@@ -12024,4 +12024,10 @@ footer.footer {
 
 .text-justify {
   text-align: justify;
+}
+
+.resaTrajet a {
+  display: block;
+  color: #283618;
+  padding: 10px;
 }/*# sourceMappingURL=main.css.map */

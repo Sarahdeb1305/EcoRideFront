@@ -1,0 +1,27 @@
+<div class="hero-scene text-center text-white">
+  <div class="hero-scene-content">
+    <h1>Chercher les trajets disponibles</h1>
+  </div>
+</div>
+
+<div class="container">
+    <form>
+        <div class="mb-3">
+            <label for="Départ" class="form-label">Ville de départ</label>
+            <input disabled type="text" class="form-control" id="Départ" placeholder="Votre ville de départ" value="Paris">
+        </div>
+        <div class="mb-3">
+            <label for="ArrivéeInput" class="form-label">Ville d'arrivée</label>
+            <input disabled type="text" class="form-control" id="ArrivéeInput" placeholder="Votre ville d'arrivée" value="Lyon">
+        </div>
+        <div class="mb-3">
+            <label for="DatesInput" class="form-label">Date</label>
+            <input type="date" class="form-control" id="DatesInput">
+        </div>
+        
+        <div class="text-center">
+            <a href="/trajets" class="btn btn-primary">Valider</a>
+            <button type="button" class="btn btn-danger"  data-bs-toggle="modal" data-bs-target="#DeleteReservation">Annuler</button>
+        </div>
+    </form>
+</div>
