@@ -1,0 +1,116 @@
+<div class="hero-scene text-center text-white">
+  <div class="hero-scene-content">
+    <h1>Mon compte</h1>
+  </div>
+</div>
+
+<div class="container">
+    <form>
+        <div class="mb-3">
+            <label for="NomInput" class="form-label">Nom</label>
+            <input type="text" class="form-control" id="NomInput" placeholder="Votre nom" value="Doe">
+        </div>
+        <div class="mb-3">
+            <label for="PrénomInput" class="form-label">Prénom</label>
+            <input type="text" class="form-control" id="PrénomInput" placeholder="Votre prénom" value="John">
+        </div>
+        <div class="mb-3">
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="positionChoisi" id="midiRadio">
+                <label class="form-check-label" for="midiRadio">
+                    Passager
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="positionChoisi" id="soirRadio" checked>
+                <label class="form-check-label" for="soirRadio">
+                    chauffeur
+                </label>
+            </div>
+        </div>
+        <div class="text-center">
+            <button type="submit" class="btn btn-primary">Modifier vos informations</button>
+            <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#EditionProfilModal"><i class="bi bi-pencil-square"></i></button>
+        </div>
+    </form>
+    <div class="text-center pt-3" >
+        <a href="/editPassword">Cliquez ici pour modifier votre mot de passe</a>
+    </div>
+</div>
+
+
+
+<!-- Modal edition -->
+<div class="modal fade" id="EditionProfilModal" tabindex="-1" aria-labelledby="EditionProfilModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title fs-5" id="EditionProfilModalLabel">Modifier votre profil</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form>
+                <div class="mb-3">
+                  <label for="immatInput" class="form-label">Plaque d'immatriculation</label>
+                  <input type="text" class="form-control" id="immatInput" placeholder="AB-123-CD" name="PlaqueImmat"> 
+                </div>
+                <div class="mb-3">
+                  <label for="dateInput" class="form-label">Date de la première immatriculation</label>
+                  <input type="text" class="form-control" id="dateInput" placeholder="20/12/2020" name="DateImmat">
+                </div>
+                <div class="mb-3">
+                  <label for="modeleInput" class="form-label">Modèle du véhicule</label>
+                  <input type="text" class="form-control" id="modeleInput" placeholder="Peugeot 308" name="Modele">
+                </div>
+                <div class="mb-3">
+                  <label for="couleurInput" class="form-label">Couleur du véhicule</label>
+                  <input type="text" class="form-control" id="couleurInput" placeholder="Rouge" name="Couleur">
+                </div>
+                <div class="mb-3">
+                  <label for="marqueInput" class="form-label">Marque du véhicule</label>
+                  <input type="text" class="form-control" id="marqueInput" placeholder="Peugeot" name="Marque">
+                </div>
+                <div class="mb-3">
+                  <label for="placesInput" class="form-label">Nombre de place disponible</label>
+                  <input type="number" class="form-control" id="placesInput" placeholder="4" name="Places">
+                </div>
+                
+                <div class="mb-3">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="preferenceChoisi" id="midiRadio">
+                        <label class="form-check-label" for="midiRadio">
+                            Fumeur
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="preferenceChoisi" id="soirRadio" checked>
+                        <label class="form-check-label" for="soirRadio">
+                            Non fumeur
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="preferenceChoisi" id="midiRadio">
+                        <label class="form-check-label" for="midiRadio">
+                            Animal
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="preferenceChoisi" id="soirRadio" checked>
+                        <label class="form-check-label" for="soirRadio">
+                            Pas d'Animal
+                        </label>
+                    </div>
+              </div>
+            </form>
+            <div class="mb-3">
+                  <label for="preferenceInput" class="form-label">Autres Préférences</label>
+                  <input type="text" class="form-control" id="preferenceInput" placeholder="D'autres préférences ?" name="Preference">
+                </div>
+            <div class="text-center">
+                    <button type="button" class="btn btn-primary">Enregistrer</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button>
+                </div>
+        </div>
+      </div>
+    </div>
+  </div>
